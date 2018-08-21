@@ -1,10 +1,6 @@
 def decrease(num):
-    ls=[]
     ls1=[]
-    while num>0 :
-        rem = num%10
-        num = num//10
-        ls.append(rem)
+    ls=[int(x) for x in num]
     for i in range(0,len(ls)):
         ls1.append(ls[i]) 
     ls.sort(key=int)
@@ -14,12 +10,8 @@ def decrease(num):
         return False
 
 def increase(num):
-        ls=[]
-        ls1=[]
-        while num>0 :
-            rem = num%10
-            num = num//10
-            ls.append(rem)
+       ls1=[]
+       ls=[int(x) for x in num]
         for i in range(0,len(ls)):
             ls1.append(ls[i])
         ls.sort(key=int)
